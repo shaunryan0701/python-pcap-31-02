@@ -26,3 +26,16 @@ try:
     stream.close()
 except Exception as e:
     print('An Error has occurred', e)
+
+try:
+    stream = open('animals.txt')
+    line = stream.readline()
+    while line != '':
+      print(line, end='.')
+      line = stream.readline()
+    
+    stream.close()
+except Exception as e:
+    print('An Error has occurred', e)
+
+    
