@@ -18,6 +18,21 @@ class Classy:
     def other(self):
         print("other")
 
+    def visible(self):
+        print("visible")
+    
+    def __hidden(self):
+        print("hidden")
+
 obj = Classy()
 obj.var = 3
 obj.method()
+
+obj.visible()
+
+try:
+    obj.__hidden()
+except:
+    print("failed")
+
+obj._Classy__hidden()
