@@ -24,3 +24,7 @@ def fibonacci(n):
 
 fibs = list(fibonacci(10))
 print(fibs)
+
+# List comprehension becoming a generator
+for x in (el * 2 for el in range(5)):
+    print(x)
