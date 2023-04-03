@@ -16,3 +16,12 @@ try:
     fo.close()
 except IOError as e:
     print("I/O error occurred: ", strerror(e.errno))
+
+# byte array
+data = bytearray(10)
+
+for i in range(len(data)):
+    data[i] = 10 - i
+
+for b in data:
+    print(hex(b))
