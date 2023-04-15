@@ -10,3 +10,6 @@ c = calendar.Calendar()
 
 for date in c.itermonthdates(2019, 11):
     print(date, end=" ")
+
+for iter in c.itermonthdays(2019, 11):
+    print(iter, end=" ")
