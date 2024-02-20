@@ -6,7 +6,7 @@ special = '!@#$%^&*()_+'
 
 def print_instructions():
   print('''
--- Password generato --
+-- Password generator --
 Choose option:
 1. generate password
 2. exit the program
